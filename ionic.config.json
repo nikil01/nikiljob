@@ -1,0 +1,7 @@
+{
+  "name": "demo-naukri-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

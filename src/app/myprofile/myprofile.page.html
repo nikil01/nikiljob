@@ -1,0 +1,61 @@
+<ion-content class="ion-padding">
+    <div class="title">
+      <h4 style="padding-left: 25px;padding-top:10px;">Interview Application Form</h4><br>
+      <h6 style="padding-left: 80px;">Applicant Details</h6>
+      <p></p>
+    </div>
+  <div>
+    
+      
+     <div>
+     <label position="stacked" style="padding-bottom:5px">Candidate Name</label>
+     <ion-input type="text" class="primary-input" style="padding-top: 5px;"></ion-input>
+    </div>
+     
+     <ion-label position ="stacked" style="text-align:center;">Position Applied</ion-label><br>
+     <ion-input type="text" class="primary-input"></ion-input>
+     <ion-item>
+      <ion-label>Gender</ion-label>
+        <ion-select value="male">
+          <ion-select-option value="male">Male</ion-select-option>
+          <ion-select-option value="female">Female</ion-select-option>
+        </ion-select>
+      </ion-item><br>
+      <ion-label position="stacked" >Email</ion-label>
+      <ion-input type="Email"class="primary-input"></ion-input>
+      <ion-label position="stacked" >Mobile No</ion-label>
+      <ion-input type="tel"class="primary-input"></ion-input>
+      <ion-label position="stacked">Passport No</ion-label>
+      <ion-input type="string"class="primary-input"></ion-input>
+      <ion-label position="stacked">Date of Birth</ion-label>
+      <ion-datetime class="primary-input"(ionchange)="calcage"[(ngModel)]="selectedDate"[max]="today"></ion-datetime>
+     
+      <ion-label position="stacked">Age</ion-label>
+      
+      <ion-item>
+        <ion-label>ECR/ECNR</ion-label>
+          <ion-select value="male">
+            <ion-select-option value="male">ECR</ion-select-option>
+            <ion-select-option value="female">ECNR</ion-select-option>
+          </ion-select>
+        </ion-item><br>
+      <ion-label position="stacked">Total Exprience</ion-label>
+      <ion-input type="text" class="primary-input"></ion-input>
+      <ion-label position="stacked" >Overseas Exprience</ion-label>
+      <ion-input type="text" class="primary-input"></ion-input>
+      <ion-label position="stacked" >Indian Exprience</ion-label>
+      <ion-input type="text"class="primary-input"></ion-input>
+      <ion-label position="stacked" >Degree</ion-label>
+      <ion-input type="text"class="primary-input"></ion-input>
+      <ion-label position="stacked">Specialization</ion-label>
+      <ion-input type="text"class="primary-input"></ion-input>
+      <form action="/action_page.php">
+        <label for="myfile">Upload Photo:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br>
+      </form><br>
+    <ion-button (click)="submit()" expand="block" fill="outline" shape="round">
+      Submit
+    </ion-button>
+  </div>
+  
+</ion-content>
